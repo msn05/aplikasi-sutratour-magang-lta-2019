@@ -1,0 +1,252 @@
+/* =================================== */
+/*  Footer Styles
+/* =================================== */
+
+#footer {
+  color: #252b33;
+  padding: 0px 0px 35px 0px;
+  padding: 0 0 2rem 0;
+  margin-top: 30px;
+  .footer-copyright {
+    border-top: 1px solid #e6e9ec;
+    padding: 32px 0px 0px;
+    margin-top: 2rem;
+    margin-top: 32px;
+    text-align: center;
+    .nav {
+      .nav-item {
+        display: inline-block;
+        line-height: 12px;
+        margin: 0;
+        padding: 0 10px;
+        .nav-link {
+          padding-left: 0;
+          padding-right: 0;
+          color: #252b33;
+		  @include transition(all 0.2s ease);
+          &:focus {
+            color: $primary-color;
+			@include transition(all 0.2s ease);
+          }
+        }
+      }
+      .nav-link:hover {
+        color: $primary-color;
+		@include transition(all 0.2s ease);
+      }
+    }
+    .copyright-text {
+      color: #67727c;
+      margin: 12px 0 0 0;
+      padding: 0;
+    }
+  }
+}
+
+/* Payments Images */
+.payments-types {
+  margin: 0;
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  li {
+    margin: 0px 10px 8px 0px;
+    a {
+	  @include transition(all 0.2s ease);
+      opacity: 1;
+    }
+    img {
+      display: flex;
+    }
+    &:hover a {
+      opacity: 0.8;
+    }
+  }
+}
+
+/* Newsleter */
+.newsletter {
+  .form-control {
+    height: 38px!important;
+    font-size: 14px;
+  }
+  .btn {
+    height: 38px;
+    padding-top: 0;
+    padding-bottom: 0px;
+    font-size: 14px;
+    background: #546d89;
+	border-color: #546d89;
+    &:hover {
+      background: #415b78;
+    }
+  }
+}
+
+/* Social Icons */
+.social-icons {
+  margin: 0;
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  li {
+    margin: 0px 2px 4px;
+    padding: 0;
+    border-radius: 100%;
+    overflow: visible;
+    &:last-child {
+      margin-right: 0px;
+    }
+    a {
+      background: #d4d4d4;
+      border-radius: 100%;
+      display: block;
+      height: 34px;
+      line-height: 34px;
+      width: 34px;
+      font-size: 16px;
+      text-align: center;
+      color: #fff;
+      text-decoration: none;
+	  @include transition(all 0.2s ease);
+    }
+    i {
+      line-height: inherit;
+    }
+  }
+  &.social-icons-sm li a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+  }
+  &.social-icons-lg li a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+  }
+  &.social-icons-dark li a {
+    background: #555;
+  }
+  li:hover {
+    a {
+      background: #171717;
+      color: #FFF;
+    }
+  }
+  li:hover.social-icons-twitter a, &.social-icons-colored li.social-icons-twitter a {
+    background: $twitter;
+  }
+  li:hover.social-icons-facebook a, &.social-icons-colored li.social-icons-facebook a {
+    background: $facebook;
+  }
+  li:hover.social-icons-linkedin a, &.social-icons-colored li.social-icons-linkedin a {
+    background: $linkedin;
+  }
+  li:hover.social-icons-rss a, &.social-icons-colored li.social-icons-rss a {
+    background: $rss;
+  }
+  li:hover.social-icons-google a, &.social-icons-colored li.social-icons-google a {
+    background: $google;
+  }
+  li:hover.social-icons-pinterest a, &.social-icons-colored li.social-icons-pinterest a {
+    background: $pinterest;
+  }
+  li:hover.social-icons-youtube a, &.social-icons-colored li.social-icons-youtube a {
+    background: $youtube;
+  }
+  li:hover.social-icons-instagram a, &.social-icons-colored li.social-icons-instagram a {
+    background: $instagram;
+  }
+  li:hover.social-icons-skype a, &.social-icons-colored li.social-icons-skype a {
+    background: $skype;
+  }
+  li:hover.social-icons-email a, &.social-icons-colored li.social-icons-email a {
+    background: $email;
+  }
+  li:hover.social-icons-vk a, &.social-icons-colored li.social-icons-vk a {
+    background: $vk;
+  }
+  li:hover.social-icons-xing a, &.social-icons-colored li.social-icons-xing a {
+    background: $xing;
+  }
+  li:hover.social-icons-tumblr a, &.social-icons-colored li.social-icons-tumblr a {
+    background: $tumblr;
+  }
+  li:hover.social-icons-reddit a, &.social-icons-colored li.social-icons-reddit a {
+    background: $reddit;
+  }
+  li:hover.social-icons-delicious a, &.social-icons-colored li.social-icons-delicious a {
+    background: $delicious;
+  }
+  li:hover.social-icons-stumbleupon a, &.social-icons-colored li.social-icons-stumbleupon a {
+    background: $stumbleupon;
+  }
+  li:hover.social-icons-digg a, &.social-icons-colored li.social-icons-digg a {
+    background: $digg;
+  }
+  li:hover.social-icons-blogger a, &.social-icons-colored li.social-icons-blogger a {
+    background: $blogger;
+  }
+  li:hover.social-icons-flickr a, &.social-icons-colored li.social-icons-flickr a {
+    background: $flickr;
+  }
+  li:hover.social-icons-vimeo a, &.social-icons-colored li.social-icons-vimeo a {
+    background: $vimeo;
+  }
+  li:hover.social-icons-yahoo a, &.social-icons-colored li.social-icons-yahoo a {
+    background: $yahoo;
+  }
+  li:hover.social-icons-googleplay a, &.social-icons-colored li.social-icons-googleplay a {
+    background: $gplus;
+  }
+  li:hover.social-icons-apple a, &.social-icons-colored li.social-icons-apple a {
+    background: $appstore;
+  }
+  &.social-icons-colored li {
+    &:hover a {
+      background: #d4d4d4;
+    }
+  }
+}
+
+/* Login/Signup Modal Dialog */
+#login-signup .modal-dialog,
+#login-signup-page {
+	max-width: 430px;
+}
+
+/* Back to Top */
+#back-to-top {
+  display: none;
+  position: fixed;
+  z-index: 1030;
+  bottom: 8px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 100%;
+  @include transition(all 0.3s ease-in-out);
+  @include box-shadow(0px 5px 15px rgba(0, 0, 0, 0.15));
+  &:hover {
+    background-color: $primary-color;
+	@include box-shadow(0px 5px 15px rgba(0, 0, 0, 0.25));
+	@include transition(all 0.3s ease-in-out);
+  }
+}
+
+@media (max-width: 575px) {
+  #back-to-top {z-index: 1029;}
+}

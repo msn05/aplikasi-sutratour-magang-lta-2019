@@ -1,0 +1,221 @@
+/* =================================== */
+/*  Booking
+/* =================================== */
+
+/*==== Booking Page =====*/
+.travellers-class {
+  position: relative;
+}
+
+.travellers-class-input {
+  cursor: pointer;
+}
+.travellers-class-input[readonly]{background:#fff;}
+.travellers-dropdown {
+  position: absolute;
+  display: none;
+  @include box-shadow(0px 2px 12px rgba(0, 0, 0, 0.176));
+  z-index: 11;
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  min-width: 300px;
+  width: 100%;
+  .qty {
+    .qty-spinner {
+      background: none;
+      border: none;
+      pointer-events: none;
+      text-align: center;
+      padding: .2rem .2rem;
+    }
+    .btn {
+      padding-top: .2rem;
+      padding-bottom: .2rem;
+      border-radius: 0.25rem !important;
+    }
+  }
+}
+
+
+@media (max-width: 991px) {
+  .travellers-dropdown {
+    min-width: inherit;
+  }
+}
+
+.icon-inside {
+  position: absolute;
+  right: 15px;
+  top: calc(50% - 11px);
+  pointer-events: none;
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: #c4c3c3;
+  z-index:3;
+}
+.form-control-sm + .icon-inside{font-size:0.875rem!important; font-size:14px; top: calc(50% - 13px);}
+
+.flight-list .flight-item, .train-list .train-item, .bus-list .bus-item {
+  position: relative;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.flight-list {
+  .flight-item .flight-details .time-info small {
+    line-height: 15px;
+  }
+  &.round-trip .flight-item {
+    .company-info span, .time-info small {
+      line-height: 15px;
+    }
+  }
+}
+
+.round-trip-fare {
+  small {
+    line-height: 14px;
+  }
+  .company-info img {
+    min-width: 26px;
+  }
+}
+
+.confirm-details {
+  .company-info {
+    img {
+      min-width: 26px;
+    }
+    line-height: 15px;
+  }
+  .time-info small {
+    line-height: 15px;
+  }
+}
+
+.promo-code {
+  max-height: 150px;
+  padding-left: 30px;
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+.train-list .train-item .time-info small, .bus-list .bus-item .time-info small {
+  line-height: 15px;
+}
+
+.date-available {
+  border: 1px solid #dee2e6;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  overflow-x: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -webkit-overflow-scrolling: touch;
+  li {
+    + li {
+      border-left: 1px solid #dee2e6;
+    }
+    flex: 1 1 auto !important;
+    -ms-flex: 1 1 auto !important;
+  }
+}
+body {
+  position: relative;
+}
+
+/*==== Hotels =====*/
+.hotels-list .hotels-item{position:relative; margin-bottom:1rem;}
+.hotels-reviews .hotels-reviews-score{background:#3FC299;}
+.hotels-amenities span{margin-right:.7rem; color:rgba(0,0,0,.4)!important;}
+.hotels-amenities span.cf{color:rgba(0,0,0,.5)!important; border-color:rgba(0,0,0,.3)!important; line-height:normal;}
+.hotels-amenities span.disabled{color:rgba(0,0,0,.1)!important; cursor:not-allowed;}
+
+.hotels-amenities-detail {display:-ms-flexbox; display: flex; -ms-flex-wrap:wrap; flex-wrap:wrap;}
+.hotels-amenities-detail span{width:50px; height:50px; line-height:50px; text-align:center; margin-right:10px; margin-bottom:10px; color:#888;}
+
+.review-tumb{width:60px; height:60px; line-height:60px;}
+
+@media (max-width: 991px) {
+  .flight-list .flight-item .flight-details .nav-tabs .nav-item .nav-link {
+    font-size: 0.875rem;
+    padding: .5rem 0.5rem;
+  }
+  .round-trip-fare .price {
+    font-size: 18px !important;
+  }
+  .round-trip-fare .time-info span {
+    font-size: 15px !important;
+  }
+  .confirm-details {
+    .date {
+      font-size: 14px !important;
+    }
+    .trip-title {
+      .trip-arrow {
+        font-size: 31px !important;
+      }
+      .trip-place {
+        font-size: 15px !important;
+      }
+    }
+  }
+  .train-list .train-item .time-info .duration, .bus-list .bus-item .time-info .duration {
+    font-size: 13px !important;
+  }
+  .train-list .train-item .train-name, .bus-list .bus-item .operator-name {
+    font-size: 15px !important;
+  }
+}
+
+
+
+@media (max-width: 575px) {
+  .flight-list {
+    &:not(.round-trip) .flight-item {
+      .company-info span {
+        line-height: 15px;
+      }
+      .time-info span {
+        font-size: 12px !important;
+      }
+      .price {
+        font-size: 13px !important;
+      }
+      .btn-book .btn {
+        width: 100%;
+        margin-top: 5px;
+      }
+      .flight-details .time-info span {
+        font-size: 22px !important;
+      }
+    }
+    .flight-item .flight-details .trip-title {
+      .trip-place {
+        font-size: 15px !important;
+      }
+      .trip-arrow {
+        font-size: 31px !important;
+      }
+    }
+  }
+  .round-trip-fare {
+    .price {
+      font-size: 16px !important;
+    }
+    .time-info span {
+      font-size: 13px !important;
+    }
+  }
+  .confirm-details {
+    .trip-title .trip-arrow {
+      font-size: 22px !important;
+    }
+    .date {
+      font-size: 13px !important;
+    }
+  }
+}

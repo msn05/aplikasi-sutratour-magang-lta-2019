@@ -1,0 +1,61 @@
+/*-----------------------------------------------------------------------------------
+
+   Template Name: Quickai
+   Template URI: http://demo.harnishdesign.net/html/quickai
+   Description: Recharge & Bill Payment, Booking HTML Template
+   Author: Harnish Design
+   Author URI: https://themeforest.net/user/harnishdesign
+   Version: 1.1
+	
+=================================================
+  Table of Contents
+=================================================
+
+	- Basic
+	- Helpers Classes
+	- Layouts
+	- Header
+		- Logo
+		- Primary Menu
+		- Secondary Nav
+		- Page Header
+	- Recharge & Bill Pages
+	- Booking Pages
+	- Elements
+		- Featured Box
+		- Team
+		- Accordion & Toggle
+		- Tabs
+		- Easy Responsive Tab Accordion
+		- Custom Background
+		- Brands Grid
+		- Banner
+		- Simple ul
+	- Footer
+		- Payments Images
+		- Newsleter
+		- Social Icons
+		- Login/Signup Modal Dialog
+		- Back to Top
+	- Extra
+
+-------------------------------------------------------------------*/
+
+// Initialize
+@import "variables";
+@import "mixins";
+
+
+// Core CSS
+@import "reset";
+@import "helpers";
+@import "layouts";
+
+
+// Content Blocks
+@import "header";
+@import "rechargebill";
+@import "booking";
+@import "elements";
+@import "footer";
+@import "extras";

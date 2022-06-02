@@ -1,0 +1,188 @@
+/* =================================== */
+/*  Extras
+/* =================================== */
+
+/* Bootstrap Specific */
+
+.form-control, .custom-select {
+  border-color: #d5d3d3;
+  font-size: 15px;
+  color: #777;
+}
+
+.form-control:not(.form-control-sm) {
+  padding: .810rem .96rem;
+  height:inherit;
+}
+
+.form-control-sm{font-size:14px;}
+
+select.form-control:not([size]):not([multiple]):not(.form-control-sm) {
+  height: auto;
+  padding-top: .700rem;
+  padding-bottom: .700rem;
+}
+.custom-select:not(.custom-select-sm){
+  height:calc(3.05rem + 2px);
+  padding-top: .700rem;
+  padding-bottom: .700rem;}
+.col-form-label-sm{font-size:13px;}
+.custom-select-sm{padding-left:5px!important; font-size:14px;}
+
+.form-control:focus {
+  @include box-shadow(0 0 5px rgba(128, 189, 255, 0.5));
+}
+.form-control:focus[readonly]{box-shadow:none;}
+
+.input-group-text {
+  border-color: #d5d3d3;
+  color: #777;
+}
+
+.form-control {
+  &::-webkit-input-placeholder {
+    color: #777;
+  }
+  &:-moz-placeholder {
+    /* FF 4-18 */
+    color: #777;
+  }
+  &::-moz-placeholder {
+    /* FF 19+ */
+    color: #777;
+  }
+  &:-ms-input-placeholder, &::-ms-input-placeholder {
+    /* IE 10+ */
+    color: #777;
+  }
+}
+
+.btn {
+  padding: .750rem 2.5rem;
+  @include transition(all .5s ease);
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+}
+
+.btn:not(.btn-link) {
+  @include box-shadow(0px 5px 15px rgba(0, 0, 0, 0.15));
+  &:hover {
+	@include box-shadow(0px 5px 15px rgba(0, 0, 0, 0.3));
+	@include transition(all .5s ease);
+  }
+}
+
+.input-group-append .btn, .input-group-prepend .btn {
+  @include box-shadow(none);
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.input-group-append .btn:hover, .input-group-prepend .btn:hover {
+  @include box-shadow(none);
+}
+
+@media (max-width: 575px) {
+  .btn:not(.btn-sm){
+    padding: .810rem 1rem;
+  }
+  .input-group > {
+  .input-group-append > .btn, .input-group-prepend > .btn {
+    padding: 0 0.75rem;
+  }
+}
+}
+
+.bg-primary, .badge-primary {
+	background-color: $primary-color !important;
+}
+.bg-secondary {
+	background-color: $secondary-color !important;
+}
+.text-secondary{
+	color: $secondary-color !important;
+}
+.text-primary {
+	color: $primary-color !important;
+}
+
+.border-primary {
+	border-color: $primary-color !important;
+}
+.border-secondary {
+	border-color: $secondary-color !important;
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  &:hover {
+    background-color: $primary-color-hover;
+    border-color: $primary-color-hover;
+  }
+}
+.btn-secondary {
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+}
+.btn-outline-primary{
+  color: $primary-color;
+  border-color: $primary-color;
+  &:hover {
+    background-color: $primary-color;
+    border-color: $primary-color;
+	color: #fff;
+  }
+}
+.btn-outline-secondary{
+  color: $secondary-color;
+  border-color: $secondary-color;
+  &:hover {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+	color: #fff;
+  }
+}
+.page-item.active .page-link,
+.progress-bar,
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link,
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before,
+.custom-control-input:checked ~ .custom-control-label::before,
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before,
+.custom-control-input:checked ~ .custom-control-label::before{
+	background-color: $primary-color;
+}
+.list-group-item.active{background-color: $primary-color; border-color: $primary-color;}
+.page-link {
+  color: $primary-color;
+  &:hover {
+    color: $primary-color-hover;
+  }
+}
+
+/* Slider Range (jQuery UI) */
+.ui-slider-horizontal {
+  height: .2em;
+  margin-left: 11px;
+  margin-right: 11px;
+  .ui-slider-handle {
+    top: -0.7em;
+    margin-left: -.7em;
+    border-radius: 100%;
+    background: #fff;
+    width: 1.5em;
+    height: 1.5em;
+  }
+}
+
+.ui-widget.ui-widget-content {
+  border: none;
+  background: #eee;
+  margin-bottom: 15px;
+}
+
+.ui-widget-header {
+  background: $primary-color;
+}

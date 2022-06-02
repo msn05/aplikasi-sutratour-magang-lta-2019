@@ -1,0 +1,29 @@
+/* =================================== */
+/*  Rechare & Bill Payment
+/* =================================== */
+
+/* View Plans Link */
+.view-plans-link {
+  position: absolute;
+  right: 0px;
+  z-index: 4;
+  line-height: 50px;
+  padding: 0 15px;
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+/* Plans */
+.plans {
+  max-height: 380px;
+  overflow: hidden;
+  overflow-y: auto;
+  &.page {
+    max-height: 617px;
+  }
+  .table {
+    td, th {
+      padding: 1.8rem;
+    }
+  }
+}
